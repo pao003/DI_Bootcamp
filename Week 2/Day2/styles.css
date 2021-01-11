@@ -16,7 +16,13 @@
     background: yellow;
 
 } 
-.flex-container{
+
+.flex-container1{
+    display: flex;
+
+    align-self: center;
+}
+/* .flex-container{
     margin: 2px solid black;
     width: 1200px;
     height: 200px;
@@ -36,7 +42,7 @@ background:yellow;
 margin: 5px;
 border: 3px solid black;
 
-}
+} */
 
 .grid-container2{
     display: grid;
