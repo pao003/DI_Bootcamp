@@ -34,6 +34,10 @@ let fruits = ["kiwi", "Oranges", "Blueberries"];
 
 let moreFruits = ["Banana", ["Apples", ["Oranges"], "Blueberries"]];
 
+moreFruits[1]  = ["Apples", ["Oranges"], "Blueberries"];
+moreFruits[1][1] = ["Oranges"];
+moreFruits[1][1][0] = Oranges
+
 console.log(moreFruits[1][1][0]);
 // Result
 Oranges
