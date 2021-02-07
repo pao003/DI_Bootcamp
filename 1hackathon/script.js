@@ -39,7 +39,7 @@ function comprobarPuzzle(){
 	  (document.getElementById('piece9').parentNode.id=='nine'))
 	{
 		document.getElementById('bugs').play();
-		
+
 		
 	}
 }
