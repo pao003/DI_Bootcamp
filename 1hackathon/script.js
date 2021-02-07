@@ -1,23 +1,3 @@
-var Total_secs;
-var total_mins;
-var cronometer;
-
-function autoplay(){
-	startTime();
-
-}
-
-function startTime(){
-
-	s = documentgetElementById("seconds");
-	m = documentgetElementById("minutes");
-
-	s.innerHTML = "50";
-	
-}
-
-autoplay();
-
 function drag(e) {
     e.dataTransfer.setData("Text", e.target.id); 
 	e.target.style.opacity = '0.4'; 
@@ -59,6 +39,7 @@ function comprobarPuzzle(){
 	  (document.getElementById('piece9').parentNode.id=='nine'))
 	{
 		document.getElementById('bugs').play();
-		// alert('Felicidades, has hecho el puzzle.');
+		
+		
 	}
 }
