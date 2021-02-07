@@ -1,0 +1,90 @@
+body{
+	background-image: url("view.jpg");
+	background-size: cover;
+}
+h1 {
+	width: 600px;
+	height: 80px;
+	text-align: center;
+	font-family: 'Lucida Handwriting', cursive;
+	font-size: 60px;
+    margin-right: 30px;
+    margin-left: 30px;
+    text-shadow: 2px 2px 5px yellow;
+
+
+}
+
+p {
+	padding-top: 80px;
+	font-family: cursive;
+	font-style: italic;
+	font-size: 30px;
+
+
+
+
+}
+
+.button {
+	background-color: 
+	border: none;
+	color: black;
+	padding: 20px;
+	text-align: center;
+	display: inline-block;;
+	font-size: 16px;
+	margin: 4px 2px;
+	border-radius: 50%;
+	opacity: 0.8;
+
+}
+	
+
+
+#container {
+	margin: 20px auto;
+	width: 900px;
+	height: 500px;
+	
+	background-size: cover;
+	
+	padding: 20px;
+	border-width: 50px;
+	
+}
+
+
+#puzzleContainer{
+	border: 2px solid black;
+	width: 400px;
+	height: 400px;
+	float: left;
+	
+	
+}
+
+#puzzle {
+	
+    border: 2px solid black;
+	width: 400px;
+	height: 400px;
+	float: right;
+	
+	
+	
+}
+.containerPiece{
+	width: 133px;
+	height: 133px;
+	float: left;
+	
+	
+}
+
+#puzzleContainer img {
+	float: left;
+	
+	width: 133px;
+	height: 133px;
+}

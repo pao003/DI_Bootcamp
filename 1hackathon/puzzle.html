@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Puzzle</title>
+</head>
+<body>
+	<h1>BUGS BUNNY PUZZLE</h1>
+	<p> <b>Find out what bugs bunny says when you complete <br> the puzzle in the empty box!</p>
+
+	<div id="container">
+			<div id="puzzleContainer" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)">
+						<img id="piece5" src="image5.jpg" alt="piece5" draggable="true" ondragstart="drag(event)" ondragend="end(event)" width="133" height="133">
+						<img id="piece7" src="image7.jpg" alt="piece7" draggable="true" ondragstart="drag(event)" ondragend="end(event)" width="133" height="133">
+						<img id="piece2" src="image2.jpg" alt="piece2" draggable="true" ondragstart="drag(event)" ondragend="end(event)" width="133" height="133">
+						<img id="piece4" src="image4.jpg" alt="piece8" draggable="true" ondragstart="drag(event)" ondragend="end(event)" width="133" height="133">
+						<img id="piece6" src="image6.jpg" alt="piece6" draggable="true" ondragstart="drag(event)" ondragend="end(event)" width="133" height="133">
+						<img id="piece1" src="image1.jpg" alt="piece1" draggable="true" ondragstart="drag(event)" ondragend="end(event)" width="133" height="133">
+						<img id="piece9" src="image9.jpg" alt="piece9" draggable="true" ondragstart="drag(event)" ondragend="end(event)" width="133" height="133">
+						<img id="piece8" src="image8.jpg" alt="piece4" draggable="true" ondragstart="drag(event)" ondragend="end(event)" width="133" height="133">
+						<img id="piece3" src="image3.jpg" alt="piece3" draggable="true" ondragstart="drag(event)" ondragend="end(event)" width="133" height="133">
+		    </div>
+
+	    <div id="puzzle"> 
+	        <div class="containerPiece" id="one" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"> </div>
+	        <div class="containerPiece" id="two" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"> </div>
+	        <div class="containerPiece" id="three" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"> </div>
+	        <div class="containerPiece" id="four" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"> </div>
+	        <div class="containerPiece" id="five" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"> </div>
+	        <div class="containerPiece" id="six" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"> </div>
+	        <div class="containerPiece" id="seven" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"> </div>
+	        <div class="containerPiece" id="eight" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"> </div>
+	        <div class="containerPiece" id="nine" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"> </div>
+	        <button class="button" onclick="window.location.reload();">Reset</button>
+	    </div>
+	    <audio id="bugs" src="bugs80.mp3" preload="auto"></audio>
+		      
+    </div>
+	<script src="script.js"></script>
+
+
+</body>
+</html>
