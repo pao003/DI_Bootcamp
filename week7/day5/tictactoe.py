@@ -80,31 +80,26 @@ def replay():
 if __name__ == "__main__":
     print('Welcome to Tic Tac Toe!')
     i = 1
-    # Choose your side
     players=player_input()
-    # Empty board init
     board = ['#'] * 10
     while True:
-        game_on=full_board_check(board)
+        game_on = full_board_check(board)
         while not game_on:
-         position = player_choice(board)
-         if i % 2 == 0:
+            position = player_choice(board)
+            if i % 2 == 0:
                 marker = players[1]
             else:
                 marker = players[0]
-
             place_marker(board, marker, int(position))
-
             display_board(board)
             i += 1
             if win_check(board, marker):
                 print("You won !")
                 break
-            game_on=full_board_check(board)
+            game_on = full_board_check(board)
         if not replay():
             break
         else:
             i = 1
-
-            players=player_input()
+            players = player_input()
             board = ['#'] * 10
