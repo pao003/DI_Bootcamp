@@ -1,18 +1,17 @@
-def display_board(board):
-    blankBoard="""
-*******************
-*     |     |     *
-*  7  |  8  |  9  *
-*     |     |     *
-*-----------------*
-*     |     |     *
-*  4  |  5  |  6  *
-*     |     |     *
-*-----------------*
-*     |     |     *
-*  1  |  2  |  3  *
-*     |     |     *
-*******************
+def display_board(board): blankBoard = """
+___________________
+|     |     |     |
+|  7  |  8  |  9  |
+|     |     |     |
+|-----------------|
+|     |     |     |
+|  4  |  5  |  6  |
+|     |     |     |
+|-----------------|
+|     |     |     |
+|  1  |  2  |  3  |
+|     |     |     |
+|-----------------|
 """
 
     for i in range(1,10):
@@ -86,19 +85,16 @@ if __name__ == "__main__":
     # Empty board init
     board = ['#'] * 10
     while True:
-        # Set the game up here
         game_on=full_board_check(board)
         while not game_on:
-            # Player to choose where to put the mark
-            position = player_choice(board)
-            # Who's playin ?
-            if i % 2 == 0:
+         position = player_choice(board)
+         if i % 2 == 0:
                 marker = players[1]
             else:
                 marker = players[0]
-            # Play !
+
             place_marker(board, marker, int(position))
-            # Check the board
+
             display_board(board)
             i += 1
             if win_check(board, marker):
@@ -109,7 +105,6 @@ if __name__ == "__main__":
             break
         else:
             i = 1
-            # Choose your side
+
             players=player_input()
-            # Empty board init
             board = ['#'] * 10
